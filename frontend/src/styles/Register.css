@@ -1,0 +1,370 @@
+/* ================================
+   REGISTER PAGE
+================================ */
+
+.register-page {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  min-height: 100vh;
+
+  background: rgba(0, 0, 0, 0.78);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.register-overlay {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================================
+   MODAL
+================================ */
+
+.register-modal {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  max-height: 94vh;
+  overflow-y: auto;
+  padding: 30px 34px 26px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.18);
+}
+
+/* ================================
+   CLOSE BUTTON
+================================ */
+
+.register-close {
+  position: absolute;
+  top: 16px;
+  right: 17px;
+
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #64748b;
+  font-size: 18px;
+
+  cursor: pointer;
+}
+
+.register-close:hover {
+  color: #111827;
+}
+
+/* ================================
+   ICON
+================================ */
+
+.register-icon {
+  width: 62px;
+  height: 62px;
+
+  margin: 0 auto 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #eff6ff;
+  color: #2563eb;
+
+  font-size: 30px;
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.register-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register-header h1 {
+  margin: 0 0 7px;
+
+  color: #111827;
+
+  font-size: 27px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.register-header p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* ================================
+   GOOGLE BUTTON
+================================ */
+
+.google-button {
+  width: 100%;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border: 1px solid #d9e0ea;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.google-button:hover {
+  background: #f8fafc;
+}
+
+.google-icon {
+  font-size: 19px;
+  font-weight: 800;
+  color: #4285f4;
+}
+
+/* ================================
+   DIVIDER
+================================ */
+
+.register-divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin: 18px 0;
+}
+
+.register-divider span {
+  flex: 1;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.register-divider p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* ================================
+   INPUT GROUP
+================================ */
+
+.register-input-group {
+  margin-bottom: 13px;
+}
+
+.register-input-group label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #1f2937;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ================================
+   INPUT
+================================ */
+
+.register-input {
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 12px;
+
+  border: 1px solid #d9e0ea;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  transition: 0.2s ease;
+}
+
+.register-input:focus-within {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.08);
+}
+
+.register-input svg {
+  color: #94a3b8;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.register-input input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-size: 13px;
+}
+
+.register-input input::placeholder {
+  color: #94a3b8;
+}
+
+/* ================================
+   MESSAGES
+================================ */
+
+.register-error,
+.register-success {
+  margin: 10px 0;
+
+  padding: 9px 11px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+}
+
+.register-error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.register-success {
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+/* ================================
+   REGISTER BUTTON
+================================ */
+
+.register-button {
+  width: 100%;
+  height: 46px;
+
+  margin-top: 5px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.register-button:hover {
+  background: #1d4ed8;
+}
+
+.register-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* ================================
+   LOGIN
+================================ */
+
+.register-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  margin-top: 18px;
+
+  font-size: 12px;
+}
+
+.register-login span {
+  color: #64748b;
+}
+
+.register-login a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.register-login a:hover {
+  text-decoration: underline;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 520px) {
+  .register-page {
+    padding: 15px;
+  }
+
+  .register-modal {
+    max-width: 100%;
+    padding: 27px 22px 22px;
+    border-radius: 14px;
+  }
+
+  .register-header h1 {
+    font-size: 24px;
+  }
+
+  .register-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 26px;
+  }
+}

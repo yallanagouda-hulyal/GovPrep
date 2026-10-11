@@ -1,0 +1,330 @@
+.footer {
+  background: #101828;
+  color: #ffffff;
+}
+
+/* =========================
+   MAIN FOOTER
+========================= */
+
+.footer-main {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 70px 0 55px;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 60px;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.footer-brand {
+  max-width: 360px;
+}
+
+.footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+
+  color: #ffffff;
+
+  font-size: 24px;
+
+  font-weight: 800;
+}
+
+.footer-logo svg {
+  color: #4d7ff0;
+
+  font-size: 27px;
+}
+
+.footer-logo strong {
+  color: #4d7ff0;
+}
+
+.footer-brand > p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   SOCIAL
+========================= */
+
+.footer-socials {
+  display: flex;
+
+  gap: 10px;
+
+  margin-top: 24px;
+}
+
+.footer-socials a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #344054;
+
+  border-radius: 7px;
+
+  color: #98a2b3;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: #2864e8;
+
+  border-color: #2864e8;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   COLUMNS
+========================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 13px;
+}
+
+.footer-column h3 {
+  margin: 0 0 8px;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 800;
+}
+
+.footer-column a {
+  width: fit-content;
+
+  color: #98a2b3;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  transition: 0.2s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+
+  transform: translateX(3px);
+}
+
+/* =========================
+   CTA
+========================= */
+
+.footer-cta {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 25px 28px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 25px;
+
+  border: 1px solid #344054;
+
+  border-radius: 12px;
+
+  background: #172235;
+}
+
+.footer-cta strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #ffffff;
+
+  font-size: 17px;
+
+  font-weight: 800;
+}
+
+.footer-cta p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 12px;
+}
+
+.footer-cta button {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  padding: 11px 18px;
+
+  flex-shrink: 0;
+
+  border: none;
+
+  border-radius: 7px;
+
+  background: #2864e8;
+
+  color: #ffffff;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.footer-cta button:hover {
+  background: #1e4fc2;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 22px 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid #344054;
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #667085;
+
+  font-size: 11px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .footer-main {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-cta {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .footer-bottom {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .footer-main {
+    padding: 55px 5% 40px;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-cta {
+    margin-left: 5%;
+    margin-right: 5%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .footer-cta button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    padding: 20px 5%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+}

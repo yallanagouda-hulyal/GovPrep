@@ -1,0 +1,295 @@
+.hero {
+  min-height: 620px;
+  padding: 70px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  background: linear-gradient(
+    135deg,
+    #f7f9ff 0%,
+    #ffffff 55%,
+    #eef4ff 100%
+  );
+  overflow: hidden;
+}
+
+/* LEFT */
+
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  margin-bottom: 22px;
+  border: 1px solid #dbe5ff;
+  border-radius: 30px;
+  background: #ffffff;
+  color: #2864e8;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.hero-badge span {
+  font-size: 14px;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #101828;
+  font-size: 54px;
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #2864e8;
+}
+
+.hero-content > p {
+  max-width: 600px;
+  margin: 22px 0 30px;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* BUTTONS */
+
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-primary,
+.hero-secondary {
+  min-height: 48px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hero-primary {
+  border: 1px solid #2864e8;
+  background: #2864e8;
+  color: #ffffff;
+}
+
+.hero-primary:hover {
+  background: #1e4fc2;
+  transform: translateY(-2px);
+}
+
+.hero-secondary {
+  border: 1px solid #d0d5dd;
+  background: #ffffff;
+  color: #344054;
+}
+
+.hero-secondary:hover {
+  border-color: #2864e8;
+  color: #2864e8;
+  transform: translateY(-2px);
+}
+
+/* TRUST */
+
+.hero-trust {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-top: 38px;
+}
+
+.hero-trust div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-trust strong {
+  color: #101828;
+  font-size: 18px;
+}
+
+.hero-trust span {
+  margin-top: 3px;
+  color: #667085;
+  font-size: 11px;
+}
+
+/* IMAGE */
+
+.hero-image-wrapper {
+  position: relative;
+  flex: 1;
+  min-height: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-circle {
+  position: absolute;
+  width: 430px;
+  height: 430px;
+  border-radius: 50%;
+  background: #dfe9ff;
+}
+
+.hero-image {
+  position: relative;
+  z-index: 2;
+  width: 460px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(16, 24, 40, 0.15);
+}
+
+/* FLOATING CARD */
+
+.hero-floating-card {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 35px;
+
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  padding: 13px 16px;
+
+  background: #ffffff;
+  border: 1px solid #e4e8f0;
+  border-radius: 12px;
+
+  box-shadow: 0 12px 35px rgba(16, 24, 40, 0.12);
+}
+
+.floating-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+  background: #edf3ff;
+  font-size: 18px;
+}
+
+.hero-floating-card div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-floating-card strong {
+  color: #101828;
+  font-size: 12px;
+}
+
+.hero-floating-card small {
+  margin-top: 3px;
+  color: #667085;
+  font-size: 10px;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+  .hero {
+    padding: 60px 5%;
+    gap: 30px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero-image {
+    width: 380px;
+    height: 380px;
+  }
+
+  .hero-circle {
+    width: 360px;
+    height: 360px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 750px) {
+
+  .hero {
+    min-height: auto;
+    padding: 50px 5%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-badge {
+    font-size: 10px;
+  }
+
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero-content > p {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-trust {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .hero-image-wrapper {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .hero-image {
+    width: 330px;
+    height: 330px;
+  }
+
+  .hero-circle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .hero-floating-card {
+    right: 5px;
+    bottom: 15px;
+  }
+}
